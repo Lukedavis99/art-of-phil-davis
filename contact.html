@@ -1,6 +1,5 @@
-
-
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -15,57 +14,54 @@
 </head>
 
 <body>
-   <a href="index.html">
-        <div class="logo">
-        </div>
-    </a>
-    <nav class="navbar navbar-default">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+   <div class="header">
+        <nav class="navbar navbar-default">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="button-text">Menu</span>
                         </button>
-
-        </div>
-
-        <div class="navbar-collapse collapse" id="navbar" aria-expanded="false" style="height: 1px;">
-            <ul class="nav navbar-nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="latestworks.html">Latest Work</a></li>
-                <li><a href="https://www.artbyphildavis.com/" target="_blank">Shop</a></li>
-                <li><a href="https://theartofphildavis.blogspot.ie" target="_blank">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-    <section class="row">
-        <div class="contact-page container-fluid">
-            <div>
-                <h3 class="contact-heading uppercase text-center">Have a commission in mind or want to know more about my classes?</h3>
-                <h5 class="contact-heading uppercase text-center">Use the form below to get in touch</h5>
+                <a class="navbar-brand" href="index.html"></a>
             </div>
-            <div class="center-form">
-               
-                <form method="post" action="contact.php">
-                    <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
-                    <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
-                    <textarea rows="8" name="message" class="form-control" id="message" placeholder="Your message here" required></textarea>
-                    <button type="submit" class="btn btn-secondary center-block">Send Message</button>
-                </form>
-            </div>
-        </div>
-    </section>
-    <footer class="row">
-        <div class="container-fluid footer-details">
-            <div class="col-sm-12">
-                <ul class="list-inline social-links">
-                    <li><a target="_blank" href="https://www.facebook.com/artbyphildavis/"><i class="fa fa-facebook"></i></a></li>
-                    <li><a target="_blank" href="https://www.pinterest.ie/skinnyone2/"><i class="fa fa-pinterest"></i></a></li>
-                    <li><a target="_blank" href="https://www.instagram.com/phildavisartist/"><i class="fa fa-instagram"></i></a></li>
-                    <li><a target="_blank" href="https://www.etsy.com/shop/PhilDavis/"><i class="fa fa-etsy"></i></a></li>
+
+            <div class="navbar-collapse collapse" id="navbar" aria-expanded="false" style="height: 1px;">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="latestworks.html">Latest Work</a></li>
+                    <li><a href="https://www.artbyphildavis.com/" target="_blank">Shop</a></li>
+                    <li><a href="https://theartofphildavis.blogspot.ie" target="_blank">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
+        </nav>
+    </div>
+
+    <div class="contact-page">
+        <div>
+            <h2 class="contact-head">Contact</h2>
+            <h3 class="contact-question">Have a commission in mind or want to know more about my classes?</h3>
+            <h5 class="contact-answer">Use the form below to get in touch</h5>
+        </div>
+        <div class="center-form">
+
+            <form method="post" action="submit">
+                <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
+                <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
+                <textarea rows="8" name="message" class="form-control" id="message" placeholder="Your message here" required></textarea>
+                <button type="submit" class="btn btn-secondary center-block">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            <ul class="list-inline social-links">
+                <li><a target="_blank" href="https://www.facebook.com/artbyphildavis/"><i class="fa fa-facebook"></i></a></li>
+                <li><a target="_blank" href="https://www.pinterest.ie/skinnyone2/"><i class="fa fa-pinterest"></i></a></li>
+                <li><a target="_blank" href="https://www.instagram.com/phildavisartist/"><i class="fa fa-instagram"></i></a></li>
+                <li><a target="_blank" href="https://www.etsy.com/shop/PhilDavis/"><i class="fa fa-etsy"></i></a></li>
+            </ul>
         </div>
     </footer>
 

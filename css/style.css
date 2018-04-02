@@ -2,47 +2,39 @@
 
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:100,200,300,400,500,600,700|Courgette:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700|Alegreya+Sans:100,200,300,400,500,600,700');
 
-/*----------------------------------- header*/
 
-.logo {
-    background: url(../assets/images/artofphildavis.png);
-    background-position: 10px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-color: #2c3e4a;
-    min-height: 120px;
+
+/*---------------------------------- header*/
+
+.header {
+    height: 11vh;
     width: 100%;
-    border: 0 hidden;
 }
 
 /*---------------------------------- navbar*/
 
 .navbar.navbar-default {
-    position: absolute;
-    top: 0;
-    right: 0;
-    min-height: 120px;
-    width: 60%;
-    z-index: 1;
-    background: transparent;
-    border: hidden;
+    float: right;
+    height: 11vh;
+    width: 100%;
+    background-color: #2c3e4a;
+    border: 0;
+    margin: 0;
+    border-radius: 0;
 
 }
 
 .nav.navbar-nav {
     position: absolute;
-    right: 0;
     bottom: 0;
-    border: 10px;
-    margin: 7.5px 0;
+    right: 0;
+
 }
-
-
 
 .nav.navbar-nav li a {
     color: #ffffff;
     font-family: "Alegreya Sans", sans-serif;
-    font-size: 18px;
+    font-size: 13px;
     font-weight: 300;
     padding-right: 24px;
     margin-right: 0;
@@ -51,14 +43,16 @@
 .nav.navbar-nav li a:hover {
     color: #ffffff;
     font-family: "Alegreya Sans", sans-serif;
-    font-size: 18px;
-    font-weight: 700;
+    font-size: 13px;
+    font-weight: 500;
     transition: ease-in-out 0.2s;
     background-color: #2c3e4a;
 }
 
 .navbar-header {
-    background-color: transparent
+    background-color: transparent;
+    height: 11vh;
+
 }
 
 .button-text {
@@ -71,9 +65,28 @@
     margin-top: 4px;
     margin-right: 3px;
     margin-bottom: 4px;
- }
+}
 
+.navbar-brand {
+    background-image: url(../assets/images/artofphildavis.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 60%;
+    height: 90%;
 
+}
+
+.navbar-collapse {
+    margin-top: -1px;
+}
+
+.collapsing {
+    -webkit-transition: none;
+    transition: none;
+    display: none;
+}
 
 
 
@@ -84,44 +97,28 @@
     background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 720px;
-    width: 75%;
-    display: block;
+    position: relative;
+    height: 78vh;
+    width: 100%;
+    border: 0;
+
 }
 
 .mini-bio {
     background-color: #a33215;
-    height: 720px;
-    width: 25%;
-    font-family: "Courgette", sans-serif;
-    color: #ffffff;
-    text-align: center;
-    line-height: 1.5;
-    font-size: 18px;
-    font-weight: 400;
-    font-style: italic;
-    padding: 30px 30px;
-    position: absolute;
-    top: 120px;
-    right: 0;
-}
-
-.mini-bio-2 {
-    background-color: #a33215;
-    height: auto;
+    height: 75px;
     width: 100%;
     font-family: "Courgette", sans-serif;
     color: #ffffff;
     text-align: center;
-    font-size: 16px;
-    font-weight: 200;
-    font-style: italic;
-    padding: 15px 15px 5px 15px;
+    line-height: 1;
+    font-size: 12px;
+    padding: 9px 18px;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -1px;
 
-}
 
-.mini-bio-2 p {
-    margin: 5;
 }
 
 
@@ -130,39 +127,31 @@
 footer {
     background-color: #2c3e4a;
     color: #fafafa;
-    height: 120px;
-}
-
-
-
-.footer-details {
-    padding: 5px;
-    margin: 0;
-}
-
-.inline-block {
-    display: inline-block;
+    height: 11vh;
+    border: 0;
+    width: 100%;
 }
 
 .social-links {
-    padding-bottom: 15px;
-    padding-top: 30px;
-    float: right;
+    padding-bottom: 5px;
+    padding-top: 7px;
+    text-align: center;
+    margin: 0;
 }
 
 
 
 .social-links li a i {
-    width: 46px;
-    height: 46px;
-    padding: 20px 0;
+    width: 36px;
+    height: 36px;
+    padding: 15px 0;
     border-radius: 50%;
-    font-size: 20px;
-    line-height: 7px;
+    font-size: 18px;
+    line-height: 6px;
     text-align: center;
     color: #2c3e4a;
     background-color: #ffffff;
-    margin: 2px;
+    margin: 7px;
 }
 
 .social-links li a i:hover {
@@ -178,24 +167,41 @@ footer {
 
 /* -------------------------------- tidy up*/
 
-.container-fluid {
-    padding: 0;
-    }
-
 .row {
     margin: 0;
 }
 
 /*--------------------------------------------------------Contact page*/
 
-.contact-heading {
+.contact-head {
     font-family: "Alegreya Sans", sans-serif;
-    font-weight: 400;
-    margin-top: 25px;
-    margin-bottom: 20px;
-    color: #ffffff;
+    font-size: 24px;
+    font-weight: 500;
+    color: #a33215;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    margin: 0;
     text-align: center;
-    padding: 5px;
+}
+
+.contact-question {
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 500;
+    Font-size: 18px;
+    padding: 0 25px;
+    color: #2c3e4c;
+    text-align: center;
+    margin: 0;
+}
+
+.contact-answer {
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 500;
+    Font-size: 14px;
+    padding: 0 25px;
+    color: #a33215;
+    text-align: center;
+    margin: 10px;
 }
 
 .center-form {
@@ -218,83 +224,95 @@ button[type="submit"]:hover {
 }
 
 .contact-page {
-    background-color: #a33215;
+    min-height: 75vh;
+}
+
+.form-control {
+    margin-bottom: 8px;
+    border: 2px solid #a33215;
+
 }
 
 /*--------------------------------------------------------Latest Works*/
 
+.imglist {
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+
+}
+
+.imglist a img {
+    margin: 8px;
+    height: 25vh;
+    border: 8px solid;
+    border-radius: 4px;
+    border-color: #2c3e4a;
+}
+
+.lw-head {
+    margin: 0;
+    padding-bottom: 5px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #a33215;
+}
+
+
 .lw-intro {
     font-family: "Alegreya Sans", sans-serif;
-    font-size: 18px;
-    color: #fff;
-    text-align: center;
-    margin: 20px 30px;
-}
-.container-fluid.pic-plate {
-    background-color: #a33215;
-    }
-.ls-pic {
-    background-color: #a33215;
-    padding-bottom: 10px;
-    }
-
-.ls-pic img {
-    height: 90%;
-    width: 90%;
-    margin-top: 20px;
-    margin-left: 5%;
-    border: 10px solid #fcfcee;
-}
-
-
-.pic-info {
-    font-family: "Alegreya Sans", sans-serif;
     font-size: 14px;
-    color: #fff;
+    font-weight: 500;
+    color: #2c3e4a;
     text-align: center;
-    margin-top: 5px;
+    margin: 0;
+    padding: 15px 25px;
 }
 
-.pic-page {
-    text-decoration: none;
+.lw-intro p {
+    margin-bottom: 0;
 }
 
-.pic-page:hover {
-    text-decoration: none;
-}
+
 
 
 /*--------------------------------------------------------About*/
 
-.about-page {
-    background-color: #a33215;
-    padding-bottom: 20px;
+.container-fluid {
+    min-height: 78vh;
 }
 
 .bio {
     font-family: "Alegreya Sans", sans-serif;
-    font-size: 18px;
-    color: white;
-    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #2c3e4a;
+    padding: 5px 15px;
     text-align: justify;
+    margin: 0;
 }
 
 .about-me {
     font-family: "Alegreya Sans", sans-serif;
-    font-size: 40px;
-    color: white;
-    padding: 20px 30px;
-    text-align: left;
+    font-size: 24px;
+    font-weight: 600;
+    color: #a33215;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    margin: 0;
+    text-align: center;
+
 }
 
 .profile-pic {
-    Background-color: #a33215;
     background-image: url("../assets/images/philprofilepic.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    height: 200px;
-    margin-top: 75px;
+    height: 140px;
+    margin-top: 60px;
+
+
 }
 
 .class-pic {
@@ -302,8 +320,8 @@ button[type="submit"]:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    height: 200px;
-    margin-top: 75px;
+    height: 140px;
+
 }
 
 .button-contact {
@@ -316,6 +334,7 @@ button[type="submit"]:hover {
     text-align: center;
     Height: 25px;
     width: 100px;
+    float: center;
 }
 
 .button-contact:hover {
@@ -324,16 +343,17 @@ button[type="submit"]:hover {
     text-decoration: none;
 }
 
+
 /*--------------------------------------------------------Navbar Collapse Breakpoint*/
 
-@media (max-width: 945px) {
-    .navbar-header {
-        background-color: transparent;
-        float: none;
-    }
+/*-- Bootstrap Navbar is written with a desktop first approach. As such I max-width has been used in this instance
+to make it easier and quicker to use as styling already had occurred ---*/
 
+@media (max-width: 769px) {
     .navbar-toggle {
         display: block;
+        padding: 4px;
+        margin-top: 14px;
     }
     .navbar-fixed-top {
         top: 0;
@@ -350,8 +370,7 @@ button[type="submit"]:hover {
         padding-top: 10px;
         padding-bottom: 10px;
         text-align: right;
-        padding-right: 24px;
-        margin-right: 4px;
+        margin-left: 4px;
         border: 0;
         width: 100%;
         background-color: #2c3e4a;
@@ -360,88 +379,139 @@ button[type="submit"]:hover {
         display: block !important;
         position: absolute;
         right: 0;
-        top: 120px;
         width: 100%;
     }
     .nav.navbar-nav {
         position: relative;
         width: 100%;
-    }
-}
+        margin: 0;
+        padding-right: 4px;
+        background-color: #2c3e4a;
+        border: 0;
 
-.navbar-collapse.collapse.in {
-    background-color: #2c3e4a;
-    border: hidden;
+    }
+
+    .navbar-collapse.collapse.in {
+        background-color: transparent;
+        border: 0;
+        z-index: 1;
+        position: absolute;
+        top: 65px;
+        width: 40%;
+        padding: 0;
+    }
+
+
 }
 
 
 /*--------------------------------------------------------media queries*/
 
-@media (max-width:767px) {
-    .carousel-inner {
-        height: 440px;
+@media (min-width: 200px) and (max-width: 460px) {
+    .button-contact {
+        width: 80px;
+        height: 20px;
+        font-size: 13px;
     }
+
+}
+
+
+@media(min-width: 768px) {
+
+    .header,
+    .navbar-header,
+    footer {
+        height: 10vh;
+    }
+
+    .navbar.navbar-default {
+        height: 10vh;
+    }
+
+    .navbar-toggle {
+        margin: 20px;
+
+    }
+
+    .artwork {
+        height: 80vh
+    }
+
     .social-links {
         float: none;
-        padding-top: 15px;
         text-align: center;
-    }
-    footer {
-        height: 80px;
-    }
-    .artwork {
-        height: 440px;
-    }
-    .logo {
-        min-height: 100px;
     }
 
     .navbar-collapse.collapse {
         background-color: #2c3e4a;
     }
 
-    .collapse.in {
-        position: absolute;
-        right: 0;
-        top: 100px;
-        width: 100%;
-    }
-    .about-me {
-        font-family: "Alegreya Sans", sans-serif;
-        font-size: 30px;
-        color: white;
-        padding: 10px 20px;
-        text-align: left;
-        margin-bottom: 0;
-    }
-    .bio {
-        font-family: "Alegreya Sans", sans-serif;
+    .nav.navbar-nav li a {
         font-size: 16px;
-        color: white;
-        padding: 5px 20px 15px 20px;
-        text-align: justify;
-        margin-bottom: 0;
+        padding-right: 20px;
+
     }
-    .profile-pic {
-        margin-top: 10px;
+
+    .nav.navbar-nav li a:hover {
+        font-size: 16px;
     }
+
+
+    .lw-intro {
+        font-size: 14px;
+    }
+
+
+
+    .social-links li a i {
+        width: 48px;
+        height: 48px;
+        padding: 20px 0;
+        font-size: 24px;
+        line-height: 10px;
+        margin: 22px;
+    }
+
+    .navbar-header {
+        float: none;
+
+    }
+
+    .button-text {
+        font-size: 1.5em;
+    }
+
+    .about-me {
+        margin-top: 2vh;
+        margin-left: 60px;
+    }
+
+    .bio {
+        margin-left: 10%;
+    }
+
+    .profile-pic,
     .class-pic {
-        margin-top: 10px;
-        margin-bottom: 20px;
-    }
-    .mini-bio-2 {
-        font-size: 12px;
-        font-weight: 100;
+        margin-top: 70px;
+        margin-bottom: 8vh;
     }
 
-.lw-intro {
-    font-size: 14px;
-}
+    .container-fluid {
+        min-height: 80vh;
+    }
+
+    .contact-page {
+        min-height: 78vh;
+    }
+
+    .imglist a img {
+        height: 20vh;
+        border: 4px solid;
+        border-color: #2c3e4a;
+    }
 
 }
-
-
-
 
 
 @media(min-width: 992px) {
@@ -454,49 +524,172 @@ button[type="submit"]:hover {
     }
 }
 
-@media (max-width: 882px) {
-    .artwork {
-        width: 100%;
+@media (min-width:1024px) {
+    .social-links {
+        float: right;
+        margin: 0;
+        padding: 0;
     }
-    .mini-bio {
-        visibility: hidden;
-    }
-}
 
-@media (min-width: 882px) {
-    .mini-bio-2 {
-        visibility: hidden;
-        position: absolute;
-        bottom: 80px;
-    }
-}
 
-@media (min-width: 768px) {
+    .social-links li a i {
+        width: 42px;
+        height: 42px;
+        padding: 15px 0px;
+        font-size: 20px;
+        margin-right: 2vh;
+        margin-top: 2vh;
+        margin-bottom: 0;
+
+    }
+
     .button-contact {
-        Height: 40px;
-        width: 150px;
-        font-size: 1.5em;
-        padding-top: 2px;
+        margin-right: 100px;
+    }
+
+    .bio {
+        font-size: 16px;
+    }
+
+    .contact-page {
+        min-height: 80vh;
+    }
+
+
+    .imglist a img {
+        height: 24vh;
+        border: 8px solid;
+        border-color: #2c3e4a;
+    }
     }
 
 }
 
-@media (max-width: 492px) {
-    .navbar-toggle.collapsed {
-        padding: 0 4px 0 7px;
+@media (min-height: 300px) and (max-height: 500px) {
+    .mini-bio {
         position: absolute;
+        top: 0;
         right: 0;
-        bottom: 18px;
-        margin-right: 3px;
+        height: 72vh;
+        width: 20%;
+        padding: 3vh 3vh;
     }
-}
 
-@media (max-width: 492px) {
+    .header,
+    .navbar-header,
+    footer {
+        height: 14vh;
+    }
+
+    .navbar.navbar-default {
+        height: 14vh;
+    }
+
+    .artwork {
+        height: 72vh
+    }
+
+    .button-text {
+        margin: 0;
+    }
+
     .navbar-toggle {
-        padding: 0 4px 0 7px;
-        position: absolute;
-        right: 0;
-        bottom: 18px;
-        margin-right: 3px;
+        margin-top: 11px;
     }
+
+    .social-links {
+        float: right;
+        margin: 0;
+        padding: 0;
+    }
+
+    .list-inline.social-links {
+        margin: 1vh;
+    }
+
+    .social-links li a i {
+        width: 28px;
+        height: 28px;
+        padding: 10px 0px;
+        font-size: 14px;
+        line-height: 6px;
+        margin: 1vh;
+    }
+
+    .nav.navbar-nav li a {
+        font-size: 12px;
+        padding-right: 24px;
+
+    }
+
+    .nav.navbar-nav li a:hover {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 1366px) {
+    .mini-bio {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 72vh;
+        width: 20%;
+        padding: 3vh 3vh;
+    }
+
+    .header,
+    .navbar-header,
+    footer {
+        height: 14vh;
+    }
+
+    .navbar.navbar-default {
+        height: 14vh;
+    }
+
+    .artwork {
+        height: 72vh
+    }
+
+    .social-links li a i {
+        width: 44px;
+        height: 44px;
+        padding: 16px 0;
+        font-size: 20px;
+        line-height: 10px;
+        margin-top: 4vh;
+        margin-right: 3vh;
+        margin-bottom: 0;
+    }
+
+    .mini-bio {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .button-contact {
+        margin-right: 154px;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .bio {
+        font-size: 18px;
+    }
+
+    .container-fluid {
+        min-height: 72vh;
+    }
+
+    .profile-pic,
+    .class-pic {
+        margin-top: 60px;
+        margin-bottom: 2vh;
+    }
+
+    .contact-page {
+        min-height: 72vh;
+    }
+
+
 }

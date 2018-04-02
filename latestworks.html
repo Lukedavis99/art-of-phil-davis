@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" type="text/css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
@@ -13,96 +14,73 @@
 </head>
 
 <body>
-    <a href="index.html">
-        <div class="logo">
-        </div>
-    </a>
-    <nav class="navbar navbar-default">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+    <div class="header">
+        <nav class="navbar navbar-default">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="button-text">Menu</span>
                         </button>
+                <a class="navbar-brand" href="index.html"></a>
+            </div>
 
-        </div>
-
-        <div class="navbar-collapse collapse" id="navbar" aria-expanded="false" style="height: 1px;">
-            <ul class="nav navbar-nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="latestworks.html">Latest Work</a></li>
-                <li><a href="https://www.artbyphildavis.com/" target="_blank">Shop</a></li>
-                <li><a href="https://theartofphildavis.blogspot.ie" target="_blank">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-    <div class="container-fluid pic-plate">
-        <p class="lw-intro">On this page I have arranged some of my latest works. As new work is completed I will update to this page. I hope you enjoy what you see. For a larger image please click on the pictures to open in a new window. If you would like to see all of my work or are interested
-            in buying any of my paintings, please visit my shop.</p>
-        <div class="row">
-            <div class="col-sm-4">
-                <div class="ls-pic">
-                    <a class="pic-page" href="assets/images/cobh.jpg" target="_blank" ><img src="/assets/images/cobh.jpg" alt="Cobh Harbour">
-                    <p class="pic-info">Cobh Harbour</p>
-                    </a>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="ls-pic">
-                    <a class="pic-page" href="assets/images/bclifeboat.jpg" target="_blank" ><img src="/assets/images/bclifeboat.jpg" alt="Ballycotton Lifeboat">
-                    <p class="pic-info">Ballycotton Lifeboat</p>
-                    </a>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="ls-pic">
-                    <a class="pic-page" href="assets/images/galwayhookers.jpg" target="_blank" ><img src="/assets/images/galwayhookers.jpg" alt="Galway Hookers">
-                    <p class="pic-info">Galway Hookers</p>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-4">
-                <div class="ls-pic">
-                    <a class="pic-page" href="assets/images/oldboat.jpg" target="_blank" ><img src="/assets/images/oldboat.jpg" alt="Old Boat">
-                    <p class="pic-info">Old Boat</p>
-                    </a>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="ls-pic">
-                    <a class="pic-page" href="assets/images/starofthesea.jpg" target="_blank" ><img src="/assets/images/starofthesea.jpg" alt="Star of the Sea">
-                    <p class="pic-info">Star of the Sea</p>
-                    </a>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="ls-pic">
-                    <a class="pic-page" href="assets/images/wobblybridge.jpg" target="_blank" ><img src="/assets/images/wobblybridge.jpg" alt="Shaky Bridge">
-                    <p class="pic-info">The Shaky Bridge</p>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <footer class="row">
-        <div class="container-fluid footer-details">
-
-            <div class="col-sm-12">
-                <ul class="list-inline social-links">
-                    <li><a target="_blank" href="https://www.facebook.com/artbyphildavis/"><i class="fa fa-facebook"></i></a></li>
-                    <li><a target="_blank" href="https://www.pinterest.ie/skinnyone2/"><i class="fa fa-pinterest"></i></a></li>
-                    <li><a target="_blank" href="https://www.instagram.com/phildavisartist/"><i class="fa fa-instagram"></i></a></li>
-                    <li><a target="_blank" href="https://www.etsy.com/shop/PhilDavis/"><i class="fa fa-etsy"></i></a></li>
+            <div class="navbar-collapse collapse" id="navbar" aria-expanded="false" style="height: 1px;">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="latestworks.html">Latest Work</a></li>
+                    <li><a href="https://www.artbyphildavis.com/" target="_blank">Shop</a></li>
+                    <li><a href="https://theartofphildavis.blogspot.ie" target="_blank">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
+        </nav>
+    </div>
+    <div class="container-fluid">
+        <Div class="lw-intro">
+            <h2 class="lw-head">Latest Work</h2>
+            <p> On this page I have arranged some of my latest works which will update as new work is completed. Please enjoy. For a larger image please click on any of the images. To browse all of my work or to buy, please visit my shop.</p>
+        </Div>
+        <p class="imglist">
+
+            <a href="assets/images/cobh.jpg" data-fancybox="images">
+                <img src="/assets/images/cobh.jpg" />
+            </a>
+
+            <a href="assets/images/wobblybridge.jpg" data-fancybox="images">
+                <img src="/assets/images/wobblybridge.jpg" />
+             </a>
+
+            <a href="assets/images/starofthesea.jpg" data-fancybox="images">
+                 <img src="/assets/images/starofthesea.jpg" />
+             </a>
+
+            <a href="assets/images/galwayhookers.jpg" data-fancybox="images">
+                 <img src="/assets/images/galwayhookers.jpg" />
+             </a>
+
+            <a href="assets/images/bclifeboat.jpg" data-fancybox="images">
+                 <img src="/assets/images/bclifeboat.jpg" />
+             </a>
+
+            <a href="assets/images/oldboat.jpg" data-fancybox="images">
+                 <img src="/assets/images/oldboat.jpg" />
+             </a>
+        </p>
+    </div>
+    <footer>
+        <div>
+            <ul class="list-inline social-links">
+                <li><a target="_blank" href="https://www.facebook.com/artbyphildavis/"><i class="fa fa-facebook"></i></a></li>
+                <li><a target="_blank" href="https://www.pinterest.ie/skinnyone2/"><i class="fa fa-pinterest"></i></a></li>
+                <li><a target="_blank" href="https://www.instagram.com/phildavisartist/"><i class="fa fa-instagram"></i></a></li>
+                <li><a target="_blank" href="https://www.etsy.com/shop/PhilDavis/"><i class="fa fa-etsy"></i></a></li>
+            </ul>
         </div>
     </footer>
 
-
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 </body>

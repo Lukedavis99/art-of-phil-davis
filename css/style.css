@@ -145,7 +145,7 @@ footer {
     font-size: 1em;
     text-align: center;
     color: white;
-    padding: 10px 10px 0 10px;
+    padding: 2vh 4vh 0 4vh;
 }
 
 
@@ -408,9 +408,6 @@ to make it easier and quicker to use as styling already had occurred ---*/
 
     .social-links li a i {
         font-size: 1.5em;
-        text-align: center;
-        color: white;
-        padding: 20px 20px 0 20px;
     }
 
 
@@ -507,10 +504,6 @@ to make it easier and quicker to use as styling already had occurred ---*/
         float: right;
         margin: 0;
         padding: 0;
-    }
-
-    .social-links li a i {
-        padding: 25px 25px 0 25px;
     }
 
     .button-contact {

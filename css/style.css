@@ -145,7 +145,7 @@ footer {
     font-size: 1em;
     text-align: center;
     color: white;
-    padding: 10px;
+    padding: 10px 10px 0 10px;
 }
 
 
@@ -338,8 +338,9 @@ to make it easier and quicker to use as styling already had occurred ---*/
 @media (max-width: 769px) {
     .navbar-toggle {
         display: block;
-        padding: 4px;
+        padding: 2px;
         margin-top: 14px;
+        margin-bottom: 0;
     }
     .navbar-fixed-top {
         top: 0;
@@ -409,7 +410,7 @@ to make it easier and quicker to use as styling already had occurred ---*/
         font-size: 1.5em;
         text-align: center;
         color: white;
-        padding: 20px;
+        padding: 20px 20px 0 20px;
     }
 
 
@@ -423,10 +424,6 @@ to make it easier and quicker to use as styling already had occurred ---*/
         height: 10vh;
     }
 
-    .navbar-toggle {
-        margin: 20px;
-
-    }
 
     .artwork {
         height: 80vh
@@ -462,9 +459,6 @@ to make it easier and quicker to use as styling already had occurred ---*/
 
     }
 
-    .button-text {
-        font-size: 1.5em;
-    }
 
     .about-me {
         margin-top: 2vh;
@@ -516,7 +510,7 @@ to make it easier and quicker to use as styling already had occurred ---*/
     }
 
     .social-links li a i {
-        padding: 25px;
+        padding: 25px 25px 0 25px;
     }
 
     .button-contact {
@@ -539,7 +533,7 @@ to make it easier and quicker to use as styling already had occurred ---*/
     }
 }
 
-@media (min-height: 300px) and (max-height: 500px) {
+@media (min-height: 320px) and (max-height: 600px) {
     .mini-bio {
         position: absolute;
         top: 0;
@@ -569,6 +563,7 @@ to make it easier and quicker to use as styling already had occurred ---*/
 
     .navbar-toggle {
         margin-top: 11px;
+        margin-bottom: 0;
     }
 
     .social-links {

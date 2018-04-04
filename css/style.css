@@ -142,26 +142,12 @@ footer {
 
 
 .social-links li a i {
-    width: 36px;
-    height: 36px;
-    padding: 15px 0;
-    border-radius: 50%;
-    font-size: 18px;
-    line-height: 6px;
+    font-size: 1em;
     text-align: center;
-    color: #2c3e4a;
-    background-color: #ffffff;
-    margin: 7px;
+    color: white;
+    padding: 10px;
 }
 
-.social-links li a i:hover {
-    background-color: #a33215;
-    color: #ffffff;
-    transition: all 0.35s ease-in-out;
-    -webkit-transition: all 0.35s ease-in-out;
-    -moz-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out;
-}
 
 
 
@@ -419,6 +405,14 @@ to make it easier and quicker to use as styling already had occurred ---*/
 
 @media(min-width: 768px) {
 
+    .social-links li a i {
+        font-size: 1.5em;
+        text-align: center;
+        color: white;
+        padding: 20px;
+    }
+
+
     .header,
     .navbar-header,
     footer {
@@ -462,16 +456,6 @@ to make it easier and quicker to use as styling already had occurred ---*/
         font-size: 14px;
     }
 
-
-
-    .social-links li a i {
-        width: 48px;
-        height: 48px;
-        padding: 20px 0;
-        font-size: 24px;
-        line-height: 10px;
-        margin: 22px;
-    }
 
     .navbar-header {
         float: none;
@@ -531,16 +515,8 @@ to make it easier and quicker to use as styling already had occurred ---*/
         padding: 0;
     }
 
-
     .social-links li a i {
-        width: 42px;
-        height: 42px;
-        padding: 15px 0px;
-        font-size: 20px;
-        margin-right: 2vh;
-        margin-top: 2vh;
-        margin-bottom: 0;
-
+        padding: 25px;
     }
 
     .button-contact {
@@ -561,8 +537,6 @@ to make it easier and quicker to use as styling already had occurred ---*/
         border: 8px solid;
         border-color: #2c3e4a;
     }
-    }
-
 }
 
 @media (min-height: 300px) and (max-height: 500px) {
@@ -607,14 +581,7 @@ to make it easier and quicker to use as styling already had occurred ---*/
         margin: 1vh;
     }
 
-    .social-links li a i {
-        width: 28px;
-        height: 28px;
-        padding: 10px 0px;
-        font-size: 14px;
-        line-height: 6px;
-        margin: 1vh;
-    }
+
 
     .nav.navbar-nav li a {
         font-size: 12px;
@@ -628,6 +595,7 @@ to make it easier and quicker to use as styling already had occurred ---*/
 }
 
 @media (min-width: 1366px) {
+
     .mini-bio {
         position: absolute;
         top: 0;
@@ -651,16 +619,6 @@ to make it easier and quicker to use as styling already had occurred ---*/
         height: 72vh
     }
 
-    .social-links li a i {
-        width: 44px;
-        height: 44px;
-        padding: 16px 0;
-        font-size: 20px;
-        line-height: 10px;
-        margin-top: 4vh;
-        margin-right: 3vh;
-        margin-bottom: 0;
-    }
 
     .mini-bio {
         font-size: 16px;

@@ -145,7 +145,7 @@ footer {
     font-size: 1em;
     text-align: center;
     color: white;
-    padding: 2vh 10px 0 10px;
+    padding: 10px 10px 0 10px;
 }
 
 
@@ -335,7 +335,7 @@ button[type="submit"]:hover {
 /*-- Bootstrap Navbar is written with a desktop first approach. As such I max-width has been used in this instance
 to make it easier and quicker to use as styling already had occurred ---*/
 
-@media (max-width: 779px) {
+@media (max-width: 769px) {
     .navbar-toggle {
         display: block;
         padding: 2px;
@@ -405,15 +405,29 @@ to make it easier and quicker to use as styling already had occurred ---*/
 
 
 @media(min-width: 768px) {
-    
-    
 
     .social-links li a i {
         font-size: 1.5em;
+        text-align: center;
+        color: white;
+        padding: 20px 20px 0 20px;
     }
 
 
-   
+    .header,
+    .navbar-header,
+    footer {
+        height: 10vh;
+    }
+
+    .navbar.navbar-default {
+        height: 10vh;
+    }
+
+
+    .artwork {
+        height: 80vh
+    }
 
     .social-links {
         float: none;
@@ -495,6 +509,10 @@ to make it easier and quicker to use as styling already had occurred ---*/
         padding: 0;
     }
 
+    .social-links li a i {
+        padding: 25px 25px 0 25px;
+    }
+
     .button-contact {
         margin-right: 100px;
     }
@@ -543,6 +561,10 @@ to make it easier and quicker to use as styling already had occurred ---*/
         margin: 0;
     }
 
+    .navbar-toggle {
+        margin-top: 11px;
+        margin-bottom: 0;
+    }
 
     .social-links {
         float: right;
